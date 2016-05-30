@@ -1,0 +1,10 @@
+Feature: home page render
+  I want to be able to access homepage
+  by me
+  so that I can see homepage
+
+  Scenario: Go on post 1
+    Given I browse "http://localhost:3000/index.html"
+    And I am on homepage
+    And I wait 4 seconds
+    Then I should see "Hello Cucumber-mink"

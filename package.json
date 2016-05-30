@@ -1,0 +1,19 @@
+{
+  "name": "cucumberMink",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": " node_modules/.bin/cucumber-js features/homepage.features --require features/support/mink.js",
+    "start": "node_modules/.bin/http-server --p 3000 -e index",
+    "phantom": "phantomjs --debug=true --webdriver=4444"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "cucumber-mink": "~1.2.2",
+    "http-server": "~0.9.0",
+    "selenium-standalone": "~5.1.0",
+    "cucumber": "~0.10.3"
+  }
+}
